@@ -1,5 +1,5 @@
 {
-  "name": "wmrsp/bluebillywig/youtube-importer",
+  "name": "wmrsp/bluebillywig-youtube-importer",
   "description": "Composer package allowing to easily import video's from a YouTube channel into a Blue Billywig VMS publication.",
   "type": "library",
   "license": "MIT",
