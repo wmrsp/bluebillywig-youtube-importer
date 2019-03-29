@@ -44,7 +44,7 @@ $importer->downloadYouTube();
 
 This will download a json file for each video on the YouTube channel/account. These json files contain information about the YouTube video, amongst which the url of the particular video. In the next step this url will passed on to the Blue Billywig API so that the video may be imported.
 
-The order in which the video's are imported into the Blue Billywig VMS is the order in which the json file reside in the downloads folder.
+The order in which the video's are imported into the Blue Billywig VMS is the order in which the json file reside in the downloads folder `../vendor/wmrsp/bluebillywig-youtube-importer/downloads`.
 
 ## Importing into the Blue Billywig VMS
 
@@ -65,7 +65,9 @@ $import_results = $importer->importDownloads();
 print_r($import_results);
 ```
 
-This will extract the video's url from each of the json files and pass it onto the Blue Billywig API, who in turn will import the video into the VMS. When it is all set and done the import results will be returned and saved in a log file in the logs folder.
+This will extract the video's url from each of the json files and pass it onto the Blue Billywig API, who in turn will import the video into the VMS. When it is all set and done the import results will be returned and saved in a log file in the logs folder `../vendor/wmrsp/bluebillywig-youtube-importer/logs`.
+
+With every successful import, the corresponding json file will be removed from the downloads folder. However, the log files will not be removed. These may be used for later reference. 
 
 Please do keep in mind that, in order to prevent overloading the Blue Billywig API, there is a timeout of 30 seconds between the import of each video.
 
