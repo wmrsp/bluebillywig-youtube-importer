@@ -12,16 +12,6 @@ use Exception;
 class Functions
 {
     /**
-     * Checks whether or not the youtube-dl command line software is installed.
-     *
-     * @return bool
-     */
-    public static function YoutubeDlInstalled()
-    {
-        return `which youtube-dl` ? TRUE : FALSE;
-    }
-
-    /**
      * Check whether or not a string is valid JSON.
      *
      * @param string $json_string

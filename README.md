@@ -164,6 +164,5 @@ To run the PHP unit tests, copy `tests/config.example.yaml` to `tests/config.yam
 Run the tests with the following commands.
 
 ```php
-./vendor/bin/phpunit --bootstrap ./vendor/autoload.php ./vendor/wmrsp/bluebillywig-youtube-importer/tests/FunctionsTest.php
 ./vendor/bin/phpunit --bootstrap ./vendor/autoload.php ./vendor/wmrsp/bluebillywig-youtube-importer/tests/ImporterTest.php
 ```
