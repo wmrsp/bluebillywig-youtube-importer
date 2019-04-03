@@ -80,10 +80,6 @@ class Importer
         $this->publicationName = $publication_name;
         $this->publicationSharedSecret = $publication_shared_secret;
 
-        if(!Functions::YoutubeDlInstalled()) {
-            throw new Exception("You must have the youtube-dl command line software installed.");
-        }
-
         $this->setYouTubeDlParams([
             "skip-download" => TRUE,
             "continue" => TRUE,
