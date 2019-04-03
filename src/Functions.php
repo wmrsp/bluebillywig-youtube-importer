@@ -71,6 +71,6 @@ class Functions
      */
     public static function timestamp()
     {
-        return date("M t Y H:i:s", time());
+        return date("c", time());
     }
 }
